@@ -1,40 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Bienvenida</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <div class="container">
-        <!-- Imagen del vestido -->
-        <div class="image-container">
-            <img src="ruta/de/tu/imagen.jpg" alt="Vestido Reactivo" class="dress-image">
-        </div>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+}
 
-        <!-- Títulos "fiber reactive" -->
-        <div class="title-container">
-            <h1 class="fiber-title">fiber reactive</h1>
-            <h1 class="fiber-title">fiber reactive</h1>
-            <h1 class="fiber-title">fiber reactive</h1>
-            <h1 class="fiber-title">fiber reactive</h1>
-        </div>
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
 
-        <!-- Botones -->
-        <div class="button-container">
-            <a href="donna-franklin.html" class="button">Donna Franklin</a>
-            <a href="obra.html" class="button">Obra</a>
-            <a href="lev-manovich.html" class="button">Lev Manovich</a>
-        </div>
+.image-container {
+    margin-bottom: 20px;
+}
 
-        <!-- Círculos naranjas animados -->
-        <div class="circle circle1"></div>
-        <div class="circle circle2"></div>
-    </div>
+.dress-image {
+    max-width: 300px;
+    height: auto;
+}
 
-</body>
-</html>
+.title-container {
+    text-align: center;
+}
 
+.fiber-title {
+    font-size: 24px;
+    font-weight: 300;
+    animation: fadeInOut 4s infinite;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 20px;
+}
+
+.button {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
+    border: 1px dashed gray;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: lightgray;
+}
+
+.circle {
+    position: absolute;
+    background-color: #e86830;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+.circle1 {
+    width: 150px;
+    height: 150px;
+    top: -50px;
+    left: -50px;
+    animation: moveCircle1 10s infinite linear;
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    bottom: -30px;
+    right: -30px;
+    animation: moveCircle2 12s infinite linear;
+}
+
+@keyframes moveCircle1 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(200px, 300px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes moveCircle2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-200px, -300px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
 
