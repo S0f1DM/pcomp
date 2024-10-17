@@ -31,14 +31,14 @@ body {
 
 .title-container {
     position: absolute;
-    top: 20%;
+    top: 10%; /* Ajuste para distribuir más el texto */
     left: 5%;
     right: 5%;
     z-index: 1; /* Las letras estarán sobre los círculos */
 }
 
 .fiber-title {
-    font-size: 120px; /* Más grande */
+    font-size: 120px; /* Tamaño grande */
     font-weight: 900; /* Más grueso */
     line-height: 1.2; /* Espacio entre las líneas */
     animation: fadeInOut 6s infinite;
@@ -66,7 +66,9 @@ body {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    margin-top: 20px;
+    margin-top: 40px; /* Bajé los botones más */
+    position: absolute;
+    bottom: 5%; /* Asegura que los botones no se intersecten con el texto */
     z-index: 1; /* Para que los botones estén sobre los círculos */
 }
 
@@ -133,6 +135,31 @@ body {
     animation: bounce5 11s infinite;
 }
 
+/* Nuevos círculos */
+.circle6 {
+    width: 120px;
+    height: 120px;
+    top: 50%;
+    left: 40%;
+    animation: bounce6 10s infinite;
+}
+
+.circle7 {
+    width: 150px;
+    height: 150px;
+    top: 80%;
+    left: 20%;
+    animation: bounce7 12s infinite;
+}
+
+.circle8 {
+    width: 100px;
+    height: 100px;
+    top: 30%;
+    left: 90%;
+    animation: bounce8 8s infinite;
+}
+
 @keyframes bounce1 {
     0% {
         transform: translate(0, 0);
@@ -192,3 +219,41 @@ body {
         transform: translate(0, 0);
     }
 }
+
+/* Animaciones para los nuevos círculos */
+@keyframes bounce6 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-100px, 200px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes bounce7 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(150px, -150px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes bounce8 {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(-50px, 100px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
