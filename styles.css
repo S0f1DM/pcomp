@@ -34,7 +34,7 @@ body {
 }
 
 .fiber-title {
-    font-size: 24px;
+    font-size: 72px;
     font-weight: 300;
     animation: fadeInOut 4s infinite;
 }
