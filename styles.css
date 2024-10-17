@@ -31,45 +31,28 @@ body {
 
 .title-container {
     position: absolute;
-    top: 10%; /* Ajuste para distribuir más el texto */
-    left: 5%;
-    right: 5%;
-    z-index: 1; /* Las letras estarán sobre los círculos */
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    z-index: 2; /* Asegurar que el texto esté siempre encima de los círculos */
 }
 
 .fiber-title {
-    font-size: 120px; /* Tamaño grande */
-    font-weight: 900; /* Más grueso */
-    line-height: 1.2; /* Espacio entre las líneas */
-    animation: fadeInOut 6s infinite;
+    font-size: 100px; /* Aumenta el tamaño del texto */
+    font-weight: 900;
+    line-height: 1.2;
     text-align: center;
-    word-wrap: break-word; /* Permite que el texto se distribuya */
     color: #333;
-}
-
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
 }
 
 .button-container {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    margin-top: 40px; /* Bajé los botones más */
+    margin-top: 40px;
     position: absolute;
-    bottom: 5%; /* Asegura que los botones no se intersecten con el texto */
-    z-index: 1; /* Para que los botones estén sobre los círculos */
+    bottom: 5%; /* Baja los botones para evitar que se crucen con el texto */
+    z-index: 2; /* Asegurar que los botones estén sobre los círculos */
 }
 
 .button {
@@ -86,17 +69,17 @@ body {
     background-color: lightgray;
 }
 
-/* Círculos naranjas que chocan */
+/* Círculos naranjas */
 .circle {
     position: absolute;
     background-color: #e86830;
     border-radius: 50%;
     opacity: 0.6;
-    z-index: 0; /* Asegura que los círculos estén detrás del texto */
+    z-index: 1; /* Los círculos están detrás del texto */
 }
 
 .circle1 {
-    width: 150px; /* Reduje el tamaño para que quepan mejor */
+    width: 150px;
     height: 150px;
     top: 10%;
     left: 10%;
@@ -107,7 +90,7 @@ body {
     width: 120px;
     height: 120px;
     top: 60%;
-    left: 15%;
+    left: 20%;
     animation: bounce2 9s infinite;
 }
 
@@ -115,7 +98,7 @@ body {
     width: 180px;
     height: 180px;
     top: 30%;
-    left: 60%;
+    left: 70%;
     animation: bounce3 10s infinite;
 }
 
@@ -123,19 +106,18 @@ body {
     width: 130px;
     height: 130px;
     top: 75%;
-    left: 70%;
+    left: 75%;
     animation: bounce4 7s infinite;
 }
 
 .circle5 {
     width: 170px;
     height: 170px;
-    top: 25%;
+    top: 20%;
     left: 85%;
     animation: bounce5 11s infinite;
 }
 
-/* Nuevos círculos */
 .circle6 {
     width: 100px;
     height: 100px;
@@ -156,105 +138,57 @@ body {
     width: 120px;
     height: 120px;
     top: 40%;
-    left: 80%;
+    left: 40%;
     animation: bounce8 8s infinite;
 }
 
 @keyframes bounce1 {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(150px, 150px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(150px, 150px); }
+    100% { transform: translate(0, 0); }
 }
 
 @keyframes bounce2 {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(-100px, -100px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-100px, -100px); }
+    100% { transform: translate(0, 0); }
 }
 
 @keyframes bounce3 {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(100px, -150px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(100px, -150px); }
+    100% { transform: translate(0, 0); }
 }
 
 @keyframes bounce4 {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(-100px, 120px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-100px, 120px); }
+    100% { transform: translate(0, 0); }
 }
 
 @keyframes bounce5 {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(-150px, -50px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-150px, -50px); }
+    100% { transform: translate(0, 0); }
 }
 
-/* Animaciones para los nuevos círculos */
 @keyframes bounce6 {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(-50px, 100px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-50px, 100px); }
+    100% { transform: translate(0, 0); }
 }
 
 @keyframes bounce7 {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(150px, -150px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(150px, -150px); }
+    100% { transform: translate(0, 0); }
 }
 
 @keyframes bounce8 {
-    0% {
-        transform: translate(0, 0);
-    }
-    50% {
-        transform: translate(-50px, 100px);
-    }
-    100% {
-        transform: translate(0, 0);
-    }
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-50px, 100px); }
+    100% { transform: translate(0, 0); }
 }
+
 
 
