@@ -203,6 +203,19 @@ body {
   line-height: normal;
 }
 
+.fibre-reactive {
+  position: absolute;
+  width: 400px;
+  top: 1115px;
+  left: 314px;
+  font-family: "Inter", Helvetica;
+  font-weight: 200;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
 
 
 
