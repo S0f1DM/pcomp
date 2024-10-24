@@ -217,7 +217,7 @@ p {
   position: relative;
 }
 
-.macbook-pro .reflexiones-de-grupo {
+.reflexiones-de-grupo {
   position: absolute;
   width: 577px;
   top: 69px;
@@ -230,19 +230,19 @@ p {
   line-height: normal;
 }
 
-.macbook-pro .text-wrapper {
+.text-wrapper {
   color: #f05e33;
 }
 
-.macbook-pro .span {
+.p {
   color: #000000;
 }
 
-.macbook-pro .text-wrapper-2 {
+.text-wrapper-2 {
   color: #333333;
 }
 
-.macbook-pro .ellipse {
+.ellipse {
   position: absolute;
   width: 195px;
   height: 194px;
@@ -250,7 +250,7 @@ p {
   left: 756px;
 }
 
-.macbook-pro .img {
+.img {
   position: absolute;
   width: 138px;
   height: 137px;
@@ -258,7 +258,7 @@ p {
   left: 1082px;
 }
 
-.macbook-pro .ellipse-2 {
+.ellipse-2 {
   position: absolute;
   width: 68px;
   height: 68px;
@@ -266,7 +266,7 @@ p {
   left: 883px;
 }
 
-.macbook-pro .ellipse-3 {
+.ellipse-3 {
   position: absolute;
   width: 68px;
   height: 68px;
@@ -274,7 +274,7 @@ p {
   left: 1066px;
 }
 
-.macbook-pro .ellipse-4 {
+.ellipse-4 {
   position: absolute;
   width: 138px;
   height: 137px;
@@ -282,7 +282,7 @@ p {
   left: 1248px;
 }
 
-.macbook-pro .overlap {
+.overlap {
   position: absolute;
   width: 1200px;
   height: 480px;
@@ -290,7 +290,7 @@ p {
   left: 157px;
 }
 
-.macbook-pro .rectangle {
+.rectangle {
   position: absolute;
   width: 1197px;
   height: 401px;
@@ -300,7 +300,7 @@ p {
   border-color: #333333;
 }
 
-.macbook-pro .rectangle-2 {
+.rectangle-2 {
   position: absolute;
   width: 370px;
   height: 39px;
@@ -309,7 +309,7 @@ p {
   background-color: #ffffff;
 }
 
-.macbook-pro .text-wrapper-3 {
+.text-wrapper-3 {
   position: absolute;
   width: 378px;
   top: 0;
@@ -322,7 +322,7 @@ p {
   line-height: normal;
 }
 
-.macbook-pro .fibre-reactive-de {
+.fibre-reactive-de {
   position: absolute;
   width: 1120px;
   top: 133px;
@@ -335,11 +335,11 @@ p {
   line-height: normal;
 }
 
-.macbook-pro .text-wrapper-4 {
+.text-wrapper-4 {
   font-weight: 200;
 }
 
-.macbook-pro .text-wrapper-5 {
+.text-wrapper-5 {
   font-weight: 500;
 }
 
@@ -351,7 +351,7 @@ p {
   left: 156px;
 }
 
-.macbook-pro .rectangle-3 {
+.rectangle-3 {
   position: absolute;
   width: 1197px;
   height: 401px;
@@ -361,7 +361,7 @@ p {
   border-color: #333333;
 }
 
-.macbook-pro .rectangle-4 {
+.rectangle-4 {
   position: absolute;
   width: 518px;
   height: 39px;
@@ -370,7 +370,7 @@ p {
   background-color: #ffffff;
 }
 
-.macbook-pro .el-proceso-detr-s-de {
+.el-proceso-detr-s-de {
   position: absolute;
   width: 1102px;
   top: 124px;
@@ -383,7 +383,7 @@ p {
   line-height: normal;
 }
 
-.macbook-pro .text-wrapper-6 {
+.text-wrapper-6 {
   position: absolute;
   width: 579px;
   top: 0;
