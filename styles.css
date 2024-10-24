@@ -190,6 +190,28 @@ body {
     100% { transform: translate(0, 0); }
 }
 
+.p1{
+width: 400px;
+color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+
+}
+
+.p2{
+width: 400px;
+color: #000;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 200;
+line-height: normal;
+
+}
+
 
 
 
