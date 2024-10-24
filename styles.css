@@ -34,7 +34,6 @@ body {
     top: 10%;
     left: 10%;
     right: 10%;
-}
     z-index: 2; /* Asegurar que el texto esté siempre encima de los círculos */
 }
 
