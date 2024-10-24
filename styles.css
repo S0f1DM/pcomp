@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Inter', sans-serif;
@@ -30,6 +34,10 @@ body {
     top: 10%;
     left: 10%;
     right: 10%;
+    margin: 30px;
+    padding: 0;
+    box-sizing: border-box;
+}
     z-index: 2; /* Asegurar que el texto esté siempre encima de los círculos */
 }
 
